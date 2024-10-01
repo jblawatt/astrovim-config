@@ -1,8 +1,12 @@
-if true then return {} end
+-- if true then return {} end
 
 return {
   "yetone/avante.nvim",
   opts = {
-    provider = "copilot",
+    provider = "azure",
+    azure = {
+      endpoint = "https://s5q-aks-prod-openai.openai.azure.com",
+      deployment = "gpt-4o",
+    },
   },
 }
